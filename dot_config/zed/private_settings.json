@@ -1,0 +1,47 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+  "icon_theme": "Material Icon Theme",
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  },
+  "base_keymap": "VSCode",
+  "ui_font_size": 15,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha"
+  },
+  "languages": {
+    "SQL": {
+      "formatter": {
+        "external": {
+          "command": "sqlfmt",
+          "arguments": [
+            "--line-length",
+            "88",
+            "--dialect",
+            "bigquery",
+            "--tab-width",
+            "4",
+            "-"
+          ]
+        }
+      }
+    }
+  },
+  "file_types": {
+    "SQL": ["sql"]
+  }
+}
